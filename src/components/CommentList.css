@@ -1,0 +1,28 @@
+.comment-list {
+    padding-left: 0.5rem;
+  }
+  
+  .no-comments {
+    color: #666;
+    font-size: 0.875rem;
+  }
+  .comment-list {
+    padding-left: 0.5rem;
+  }
+  
+  .no-comments {
+    color: #666;
+    font-size: 0.875rem;
+  }
+  /* 🔽 Responsive Styling for Mobile */
+  @media (max-width: 768px) {
+    .comment-list {
+      padding-left: 0.25rem; /* Slightly reduce padding on small screens */
+    }
+  
+    .no-comments {
+      font-size: 0.75rem; /* Smaller font for smaller devices */
+    }
+  }
+  
+  

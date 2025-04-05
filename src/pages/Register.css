@@ -1,0 +1,115 @@
+/* Register Page Styling */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #b0e0f2, #d1b6f2);
+  padding: 20px;
+}
+
+/* Register Card */
+.register-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Title */
+.register-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Error Message */
+.register-error {
+  background-color: #ffdddd;
+  color: #d9534f;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+/* Form */
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Group */
+.register-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Form Label */
+.register-form .form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+/* Form Input */
+.register-form .form-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+.register-form .form-input:focus {
+  border-color: #6e8efb;
+  outline: none;
+}
+
+/* Register Button */
+.register-button {
+  width: 100%;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* Login Link */
+.register-login-link {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.register-login-link .login-link {
+  color: #6e8efb;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+/* Media Query for Responsive Design */
+@media (max-width: 480px) {
+  .register-card {
+    padding: 30px;
+  }
+
+  .register-title {
+    font-size: 1.8rem;
+  }
+
+  .form-input {
+    font-size: 0.9rem;
+  }
+
+  .register-button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

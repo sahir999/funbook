@@ -1,0 +1,10 @@
+.app {
+  min-height: 100vh;
+  background-color: #b6eef7;
+}
+
+.main-content {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+

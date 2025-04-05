@@ -1,0 +1,184 @@
+.comment {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid #aebee9;
+}
+
+.comment-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.comment-author-img,
+.comment-author-placeholder {
+  width: 45px;
+  height: 45px;
+  border-radius: 9999px;
+  border: 1px solid #c3e84b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.comment-bubble {
+  background-color: #c4f0ee;
+  border-radius: 12px;
+  padding: 10px 16px;
+}
+
+.comment-author-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.comment-text {
+  margin: 0;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.comment-meta {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #112d9e;
+}
+
+.comment-meta button {
+  background: none;
+  border: none;
+  color: #54175e;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.comment-edit textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 0.25rem;
+}
+
+.comment-edit-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.comment-edit-save,
+.comment-edit-cancel {
+  padding: 0.35rem 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.80rem;
+  cursor: pointer;
+}
+
+.comment-edit-save {
+  background-color: #4caf50;
+  color: white;
+}
+
+.comment-edit-cancel {
+  background-color: #f44336;
+  color: white;
+}
+
+.reply-input-container {
+  display: flex;
+  gap: 4px;
+}
+
+.reply-input {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #536685;
+  border-radius: 6px;
+}
+
+.reply-submit {
+  background-color: #1976d2;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reply-submit:disabled {
+  background-color: #90caf9;
+  cursor: not-allowed;
+}
+
+/* 🔽 Responsive Styling for Mobile */
+@media (max-width: 768px) {
+  .comment {
+    padding-left: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .comment-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .comment-author-img,
+  .comment-author-placeholder {
+    width: 35px;
+    height: 35px;
+    font-size: 0.85rem;
+  }
+
+  .comment-bubble {
+    padding: 8px 12px;
+    border-radius: 10px;
+  }
+
+  .comment-author-name {
+    font-size: 0.85rem;
+  }
+
+  .comment-text {
+    font-size: 0.85rem;
+  }
+
+  .comment-meta {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.75rem;
+  }
+
+  .comment-edit textarea {
+    font-size: 0.85rem;
+    padding: 0.4rem;
+  }
+
+  .comment-edit-save,
+  .comment-edit-cancel {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .reply-input {
+    padding: 0.35rem 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .reply-submit {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+}
